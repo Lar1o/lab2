@@ -8,72 +8,72 @@
 
 body {
   font-family: 'Inter', Arial, sans-serif;
-  font-size: 18px;           
+  font-size: 1rem;           
   font-weight: 400;          
   line-height: 1.7;          
   text-align: center;        
-  color: gray;            
+  color: rgb(128, 128, 128);            
   min-height: 100vh;
-  padding: 20px;
+  padding: 1.2rem;
 }
 
 
 body > * {
-  max-width: 900px;
-  min-width: 280;
+  max-width: 56.25rem;
+  min-width: 17.5rem;
   max-height: 100%;
-  min-height: 60px;
-  margin: 0 auto 30px;
+  min-height: 3.75rem;
+  margin: 0 auto 1.875rem;
   background: white;
-  padding: 30px;
-  border-radius: 20px;
+  padding: 1.875rem;
+  border-radius: 1.25rem;
 }
 
 
 h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
   color: #e74c3c;
   background: white;
-  border: 3px solid red;
-  border-radius: 30px;
-  min-height: 80px;
+  border: 3px solid hsl(0, 100%, 50%);
+  border-radius: 1.875rem;
+  min-height: 5rem;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.8;
   text-align: justify;
-  color: gray;
-  margin-bottom: 20px;
-  min-height: 40px;
-  border: 3px solid gray;
-  border-radius: 45px;
+  color: rgba(128, 128, 128, 0.7);
+  margin-bottom: 1.25rem;
+  min-height: 2.5rem;
+  border: 0.1875rem solid gray;
+  border-radius: 2.8125rem;
 }
 
 
 img {
   width: 100%;
   height: auto;
-  max-height: 500px;
-  min-height: 150px;
-  border-radius: 75px;
+  max-height: 31.25rem;
+  min-height: 19.375rem;
+  border-radius: 4.6875rem;
   display: block;
-  margin: 25px auto;
+  margin: 1.5625rem auto;
 }
 
 
 ol {
-  font-size: 20px;
+  font-size: 1.25rem;
   list-style: none;
-  max-width: 600px;
-  min-width: 280px;
-  margin: 25px auto;
+  max-width: 37.5rem;
+  min-width: 17.5rem;
+  margin: 1.5625rem auto;
   position: relative;
-  border: 3px solid gray;
-  border-radius: 35px;
+  border: 0.1875rem solid gray;
+  border-radius: 2.1875rem;
 }
 
 ol li {
@@ -99,11 +99,24 @@ ol li::before{
 }
 
 a {
-  color: red;
+  color: hsla(0, 100%, 40%, 1);
   text-decoration: none;
   font-weight: 600;
   padding: 10px 20px;
-  border: 3px solid red;
+  border: 3px solid #ff0000;
   border-radius: 25px;  
   position: relative;
+}
+
+.sources {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto 0;
+    max-width: 600px;
+}
+
+.sources {
+    flex: 0 1 auto;
 }
