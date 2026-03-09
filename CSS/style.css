@@ -86,7 +86,6 @@ ol li {
   border-radius: 12px;
   position: relative;
   text-align: left;
-  z-index: 1;
 }
 
 ol li::before{
@@ -97,7 +96,6 @@ ol li::before{
   height: 60%;
   background-color: red;
   border-radius: 3px;
-  z-index: 0;
 }
 
 a {
@@ -108,5 +106,4 @@ a {
   border: 3px solid red;
   border-radius: 25px;  
   position: relative;
-  z-index: 1;
 }
