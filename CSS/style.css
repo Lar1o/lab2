@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 18px;           
+  font-weight: 400;          
+  line-height: 1.7;          
+  text-align: center;        
+  color: gray;            
+  background: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+body > * {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 1px solid white;
+}
+
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #e74c3c;
+  background: white;
+  border-radius: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border: 4px solid white;
+  display: block;
+  margin: 25px auto;
+}
+
+
+ol {
+  font-size: 20px;
+  list-style: none;
+  margin: 25px auto
+}
+
+ol li {
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  background: blueviolet;
+  color: white;
+  border-radius: 12px;
+  position: relative;
+  text-align: left;
+}
+
+
+a {
+  color: red;
+  text-decoration: none;     /* Убираем подчеркивание */
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
