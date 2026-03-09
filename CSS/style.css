@@ -13,7 +13,6 @@ body {
   line-height: 1.7;          
   text-align: center;        
   color: gray;            
-  background: white;
   min-height: 100vh;
   padding: 20px;
 }
@@ -21,6 +20,9 @@ body {
 
 body > * {
   max-width: 900px;
+  min-width: 280;
+  max-height: 100%;
+  min-height: 60px;
   margin: 0 auto 30px;
   background: white;
   padding: 30px;
@@ -35,7 +37,9 @@ h1 {
   text-align: center;
   color: #e74c3c;
   background: white;
-  border-radius: 10px;
+  border: 3px solid red;
+  border-radius: 30px;
+  min-height: 80px;
 }
 
 p {
@@ -44,13 +48,18 @@ p {
   text-align: justify;
   color: gray;
   margin-bottom: 20px;
+  min-height: 40px;
+  border: 3px solid gray;
+  border-radius: 45px;
 }
 
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 15px;
+  max-height: 500px;
+  min-height: 150px;
+  border-radius: 75px;
   display: block;
   margin: 25px auto;
 }
@@ -59,6 +68,12 @@ img {
 ol {
   font-size: 20px;
   list-style: none;
+  max-width: 600px;
+  min-width: 280px;
+  margin: 25px auto;
+  position: relative;
+  border: 3px solid gray;
+  border-radius: 35px;
 }
 
 ol li {
@@ -71,13 +86,27 @@ ol li {
   border-radius: 12px;
   position: relative;
   text-align: left;
+  z-index: 1;
 }
 
+ol li::before{
+  content: '';
+  position: absolute;
+  left: -10px;
+  width: 6px;
+  height: 60%;
+  background-color: red;
+  border-radius: 3px;
+  z-index: 0;
+}
 
 a {
   color: red;
   text-decoration: none;
   font-weight: 600;
   padding: 10px 20px;
-  border-radius: 25px;
+  border: 3px solid red;
+  border-radius: 25px;  
+  position: relative;
+  z-index: 1;
 }
