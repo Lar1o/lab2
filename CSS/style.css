@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1rem;           
+  font-weight: 400;          
+  line-height: 1.7;          
+  text-align: center;        
+  color: rgb(128, 128, 128);            
+  min-height: 100vh;
+  padding: 1.2rem;
+}
+
+
+body > * {
+  max-width: 56.25rem;
+  min-width: 17.5rem;
+  max-height: 100%;
+  min-height: 3.75rem;
+  margin: 0 auto 1.875rem;
+  background: white;
+  padding: 1.875rem;
+  border-radius: 1.25rem;
+}
+
+
+#header {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #e74c3c;
+  background: white;
+  border: 3px solid hsl(0, 100%, 50%);
+  border-radius: 1.875rem;
+  min-height: 5rem;
+}
+
+#main {
+  flex: 1 1 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 1.25rem;
+  margin-left: 0;
+  border: 0.1875rem solid gray;
+  border-radius: 1.8125rem;
+}
+
+h2, h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: blueviolet;
+  background: white;
+  border: 3px solid blueviolet;
+  border-radius: 1.875rem;
+  min-height: 5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 1.25rem;
+  min-height: 2.5rem;
+  border: 0.1875rem solid gray;
+  border-radius: 2.8125rem;
+}
+
+
+img {
+  height: auto;
+  border-radius: 4.6875rem;
+  margin: 1.5625rem auto;
+}
+
+
+ol {
+  font-size: 1.25rem;
+  list-style: none;
+  max-width: 37.5rem;
+  min-width: 17.5rem;
+  margin: 1.5625rem auto;
+  position: relative;
+  border: 0.1875rem solid gray;
+  border-radius: 2.1875rem;
+}
+
+li {
+  font-weight: 500;
+  color: red;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  background: blueviolet;
+  color: white;
+  border-radius: 12px;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+}
+
+
+ol li {
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  background: blueviolet;
+  color: white;
+  border-radius: 12px;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+}
+
+ol li::before{
+  content: '';
+  position: absolute;
+  left: -10px;
+  width: 6px;
+  height: 60%;
+  background-color: red;
+  border-radius: 3px;
+}
+
+a {
+  color: hsla(0, 100%, 40%, 1);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 3px solid #ff0000;
+  border-radius: 25px;  
+  position: relative;
+}
+
+.sources {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto 0;
+    max-width: 600px;
+    flex: 0 1 auto;
+}
+
+.sources a {
+  flex: 0 1 auto;
+}
+
+.cont {
+  display: flex; 
+  align-items: flex-start;
+  gap: 1.5rem;         
+}
+
+.cont .pict {
+  flex: 0 0 35%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cont .pict img{
+  width: 100%;
+  height: auto;         
+  object-fit: contain;  
+  object-position: center center;
+  border-radius: 1.6875rem;
+}
